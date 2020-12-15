@@ -1,0 +1,13 @@
+.align-center {
+    text-align: center;
+}
+
+.navbar {
+    background: rgb(130, 139, 45);
+    color: black;
+}
+
+.navbar .nav-link{
+    color: black;
+}
+

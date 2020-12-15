@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <title>Административная панель</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/png">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <a class="navbar-brand" href="#"><img src="images/food.png" width="65" alt="food"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active ">
+              <a class="nav-link " href="#deli">Служба доставки еды<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#choose">Выбор предприятия<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#menu">Меню<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#options">Дополнительные опции<span class="sr-only"></span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="alert alert-danger" role="alert">
+        <strong>Служба доставки Верочки Спасовой !</strong> Криво, но работает !
+      </div>
+
+    <h1 class="align-center m-5">Предприятия общественного питания города Москвы</h1>
+
+    <hr width="70%" class="p-3">
+
+    <!-- выбор предприятия -->
+    
+
+    
+      <div class="container border">
+        <div class="row">
+            <div class="form-group col-md-4 p-3 text-md-left">
+                <label for="formGroupExampleInput">Название</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Не указано">
+              </div>
+          <div class="form-group col-md-4 p-3 text-md-left">
+            <label for="ind_adm">Административный округ</label>
+            <select id="ind_adm" class="form-control">
+              <option selected disabled hidden value='Не выбрано'>Не выбрано</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4 p-3 text-md-left">
+            <label for="ind_district">Район</label>
+            <select id="ind_district" class="form-control">
+              <option selected disabled hidden value='Не выбрано'>Не выбрано</option>
+            </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-4 text-md-left p-3">
+              <label for="ind_type">Тип</label>
+              <select id="ind_type" class="form-control">
+                <option selected disabled hidden value='Не выбрано'>Не выбрано</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4 text-md-left p-3">
+              <label for="ind_socialDiscount">Льготы</label>
+              <select id="ind_socialDiscount" class="form-control">
+                <option selected disabled hidden value='Не выбрано' id="socialDiscount">Не выбрано</option>
+                <option>Есть</option>
+                <option>Нет</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4 text-md-left p-3">
+                <label for="ind_socialDiscount">Является сетевым</label>
+                <select id="ind_socialDiscount" class="form-control">
+                  <option selected disabled hidden value='Не выбрано' id="socialDiscount">Не выбрано</option>
+                  <option>Да</option>
+                  <option>Нет</option>
+                </select>
+              </div>
+              <p>&emsp;Дата создания:</p>
+            <div class="row">
+                <div class="form-group col-md- p-3 text-md-left">
+                    <p class="form-group col-md- p-3 text-md-right"> с</p>
+                </div>
+                <div class="form-group col-md-2 p-3 text-md-left">
+                    <label for="#"></label>
+                 <textarea class="form-control" id="name" rows="1"></textarea>
+                </div>
+                <div class="form-group col-md- p-3 text-md-left">
+                   <p class="form-group col-md- p-3 text-md-right">по</p>
+                </div>
+                 <div class="form-group col-md-2 p-3 text-md-left">
+                   <label for="#"></label>
+                   <textarea class="form-control" id="name" rows="1"></textarea>
+                 </div>
+                <br>
+            </div>
+            <div class="row">
+            <p>&emsp;&emsp;Количество посадочных мест:</p>
+            <div class="row">
+            <div class="form-group col-md- p-3 text-md-left">
+                <p class="form-group col-md- p-3 text-md-right">от</p>
+            </div>
+            <div class="form-group col-md-2 p-3 text-md-left">
+                <label for="#"></label>
+                <textarea class="form-control" id="name" rows="1"></textarea>
+            </div>
+            <div class="form-group col-md- p-3 text-md-left">
+                <p class="form-group col-md- p-3 text-md-right">до</p>
+            </div>
+            <div class="form-group col-md-2 p-3 text-md-left">
+                <label for="#"></label>
+                <textarea class="form-control" id="name" rows="1"></textarea>
+            </div>
+        </div>
+            <div class="form-group col-md-12 text-md-left p-3 align-self-center mx-auto text-md-center">
+              <button class="btn btn-primary btn-lg" type="button" id="find_button" href="#rest_results">Найти!</button>
+            </div>
+          </div>
+        
+      </div>
+      
+      <p class="p-1"></p>
+      
+      
+
+      <div class="container border">
+        <div class="row">
+          <table id="records" class="table-sm">
+            <tr>
+                <th>Название</th>
+                <th>Тип</th>
+                <th>Адрес</th>
+            </tr>
+            <tbody></tbody>
+        </table>
+        </div>
+      </div>
+
+
+
+    <p class="p-1"></p>
+
+    <!-- результат поиска -->     
+    <div class="container border">
+        <div class="row">
+          <div class="col-md-6 p-3">
+            <p class="float-left"></p>
+          </div>
+          <div class="col-md-6 p-3">
+            <button class="btn btn-primary float-right" type="submit" data-toggle="modal" data-target="#exampleModal">Добавить предприятие</button>
+        <br> 
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="exampleModalLabel">Создание записи:</h2>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput"><ya-tr-span data-index="432-0" data-value="Example label" data-translation="Пример метки" data-type="trSpan">Наименование</ya-tr-span></label>
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput2"><ya-tr-span data-index="433-0" data-value="Another label" data-translation="Другой лейбл" data-type="trSpan">Название управляющей компании</ya-tr-span></label>
+                      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                    </div>
+                  </form>
+              
+                  <p>Является сетевым:</p>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio1">Да</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio2">Нет</label>
+              </div>
+              <br><br>
+              <form>
+                <div class="form-group">
+                  <label for="formGroupExampleInput"><ya-tr-span data-index="432-0" data-value="Example label" data-translation="Пример метки" data-type="trSpan">Адрес</ya-tr-span></label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2"><ya-tr-span data-index="433-0" data-value="Another label" data-translation="Другой лейбл" data-type="trSpan">Число посадочных мест</ya-tr-span></label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                </div>
+              </form>
+              <form>
+                <div class="form-group">
+                    <label for="disabledSelect">Вид объекта:</label>
+                    <select id="disabledSelect" class="form-control">
+                      <option></option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="disabledSelect">Административный округ:</label>
+                    <select id="disabledSelect" class="form-control">
+                      <option></option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="disabledSelect">Район:</label>
+                    <select id="disabledSelect" class="form-control">
+                      <option></option>
+                    </select>
+                  </div>
+              </form>
+              <p>Социальные льготы:</p>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio1">Есть</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio2">Нет</label>
+              </div>
+              <br><br>
+              <form>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Телефон:</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                </div>
+              </form>
+              <br>
+              <p>Географические координаты:</p>
+              <form>
+                <div class="form-group">
+                  <label for="formGroupExampleInput"><ya-tr-span data-index="432-0" data-value="Example label" data-translation="Пример метки" data-type="trSpan">Широта:</ya-tr-span></label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2"><ya-tr-span data-index="433-0" data-value="Another label" data-translation="Другой лейбл" data-type="trSpan">Долгота:</ya-tr-span></label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                </div>
+              </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-dismiss="modal">
+              Закрыть
+            </button>
+            <button class="btn btn-primary" >
+              Добавить предприятие
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <hr width="80%" class="p-3">
+
+    <footer class="footer">
+      <div class="container">
+        <h5 class="align-center">ООО "Служба доставки еды Верочки Спасовой"</h1>
+          <div class="row">
+            <div class="col-md-4 p-2">
+              <p class="text-md-center"><img src="images/email.png" width="10%" alt=""> verkaspice@yandex.ru</p>
+            </div>
+            <div class="col-md-4 p-2">
+              <p class="text-md-center"><img src="https://www.паркетказань.рф/vk_parketservice.jpg" width="30" alt=""> страница вконтакте</p>
+            </div>
+            
+          </div>
+      </div>
+
+
+
+    
+    
+</body>
+</html>
